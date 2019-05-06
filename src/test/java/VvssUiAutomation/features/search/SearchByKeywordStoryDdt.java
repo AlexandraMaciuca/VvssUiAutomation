@@ -2,16 +2,12 @@ package VvssUiAutomation.features.search;
 
 import VvssUiAutomation.steps.serenity.EndUserSteps;
 import net.serenitybdd.junit.runners.SerenityParameterizedRunner;
-import net.serenitybdd.junit.runners.SerenityRunner;
-import net.thucydides.core.annotations.Issue;
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
 import net.thucydides.junit.annotations.Qualifier;
 import net.thucydides.junit.annotations.UseTestDataFrom;
-import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 @RunWith(SerenityParameterizedRunner.class)
@@ -28,7 +24,7 @@ public class SearchByKeywordStoryDdt {
     public String description;
 
     @Qualifier
-    public String getQualifier(){
+    public String getQualifier() {
         return name;
     }
 
